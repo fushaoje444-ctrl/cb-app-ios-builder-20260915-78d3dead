@@ -31,7 +31,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test "$(git rev-parse HEAD)" = "PRIVATE_SOURCE_COMMIT"
+          test "$(git rev-parse HEAD)" = "78d3dead2962a64149782b1a71700e9ddcf51d60"
           echo "Private source revision verified"
 
       - name: Install XcodeGen
